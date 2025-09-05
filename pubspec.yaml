@@ -1,0 +1,47 @@
+name: expense_tracker
+description: "Track Your Expenses Easily & Stay Within Budget
+
+ Expense Tracker is a simple and intuitive app to help you manage your daily expenses effortlessly. 
+ Monitor your spending across multiple categories, set budget limits, and visualize your expenses 
+ with interactive pie charts. Customize your experience with light/dark themes and multiple currency options.
+Perfect for personal finance management and budgeting on the go!"
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  shared_preferences: ^2.2.2
+  fl_chart: ^0.63.0
+  pie_chart: ^5.4.0
+  google_fonts: ^6.2.1
+  flutter_slidable: ^3.1.0
+  glassmorphism: ^3.0.0
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  device_preview: ^1.2.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+   # - asset/
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
