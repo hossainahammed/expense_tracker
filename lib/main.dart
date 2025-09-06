@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home:  SplashScreen(), // 👈 Start with splash
+      home:  SplashScreen(),
     );
   }
 }

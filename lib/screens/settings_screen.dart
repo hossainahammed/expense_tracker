@@ -87,7 +87,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 // This calls the function in the parent widget to update the theme.
                 widget.onThemeChanged(value);
               },
-              // The text is now dynamic, changing based on the value of isDarkMode.
+
               title: Text(widget.isDarkMode ? "Dark Mode" : "Light Mode"),
             ),
           ],
