@@ -70,14 +70,19 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: Card(
-                    color: Colors.orangeAccent,
+                    color: Colors.deepPurple[300],
                     child: Padding(
                       padding: const EdgeInsets.all(12),
                       child: Column(
                         children: [
-                          const Text('Total Expense', style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text('Total Expense', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                           const SizedBox(height: 8),
-                          Text('$currency${totalExpense.toStringAsFixed(2)}'),
+                          Text('$currency${totalExpense.toStringAsFixed(2)}',
+                            style: const TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.5,
+                            ),),
                         ],
                       ),
                     ),
@@ -91,9 +96,14 @@ class DashboardScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(12),
                       child: Column(
                         children: [
-                          const Text('Available Balance', style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text('Available Balance', style: TextStyle( fontSize: 15,fontWeight: FontWeight.bold)),
                           const SizedBox(height: 8),
-                          Text('$currency${remaining.toStringAsFixed(2)}'),
+                          Text('$currency${remaining.toStringAsFixed(2)}',
+                            style: const TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.5,
+                            ),),
                         ],
                       ),
                     ),
@@ -232,12 +242,18 @@ class DashboardScreen extends StatelessWidget {
                           text: '$currency',
                           style: DefaultTextStyle.of(context).style,
                         ),
+                        const TextSpan(text: ' '),
+
                         TextSpan(
-                          text: expense.amount.toStringAsFixed(2),
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                          text: expense.amount.toStringAsFixed(0),
+                          //style: const TextStyle(fontWeight: FontWeight.bold),
+                          style: DefaultTextStyle.of(context).style.copyWith(
+                            fontWeight: FontWeight.bold,),
                         ),
+                        const TextSpan(text: ' '),
+
                         TextSpan(
-                          text: ',',
+                          text: '/-',
                           style: DefaultTextStyle.of(context).style,
                         ),
                       ],

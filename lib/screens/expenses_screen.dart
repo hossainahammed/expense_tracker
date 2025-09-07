@@ -100,7 +100,7 @@ class _ExpensesScreenState extends State<ExpensesScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showExpenseForm(),
         backgroundColor: Colors.deepPurple,
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
       body: Column(
         children: [

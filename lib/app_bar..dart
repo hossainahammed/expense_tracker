@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 PreferredSizeWidget buildAppBar() {
   return AppBar(
-    title: const Text("Track your expenses"),
+    title: const Text("ExpenseEase"),
     centerTitle: true,
     flexibleSpace: Container(
       decoration: const BoxDecoration(
